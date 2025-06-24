@@ -14,6 +14,11 @@ class Node{
         }
 };
 
-class BinaryTre{
+class BinaryTree{
+    public:
+         Node* ROOT;
 
+         BinaryTree(){
+            ROOT= nullptr ;
+         }
 };
