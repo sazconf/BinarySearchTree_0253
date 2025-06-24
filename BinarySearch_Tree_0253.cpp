@@ -76,6 +76,7 @@ class BinaryTree{
                 }
             }
 
+
             void inorder (Node * ptr){
                 if (isEmpty()){
                     cout<<"Tree is empty"<<endl;
@@ -89,6 +90,42 @@ class BinaryTree{
                 inorder (ptr-> rightchild);
             }
 
+            void preorder (Node* ptr){
+                if(isEmpty()){
+                cout << "Tree is empty" << endl;
+                return;
+                }
+                if (ptr == nullptr){
+            return;
+            }
 
-         }
+                cout << ptr->info << " ";  // Visit the root node first
+                preorder(ptr->leftchild);   // Traverse the left subtree
+                preorder(ptr->rightchild);  // Traverse the right subtree
+}
+
+
+            void postorder (Node* ptr){
+                if(isEmpty()){
+                    cout<<"Tree is empty" << endl;
+                    return;
+                }
+                if (ptr == nullptr){
+                    return;
+                }
+
+                postorder(ptr->leftchild);
+                postorder(ptr->rightchild);
+                cout << ptr-> info << " ";
+            }
+
+            bool isEmpty(){
+                //checks if the treee is emtpu
+                return ROOT == nullptr;
+            }
+
+            
+
+
+
 };
