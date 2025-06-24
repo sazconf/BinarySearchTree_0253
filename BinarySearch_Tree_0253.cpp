@@ -7,5 +7,9 @@ class Node{
         Node* leftchild;
         Node* rightchild;
 
-        //constructor for the node class
+        //constructor for the node class4
+        Node(){
+            leftchild = nullptr;
+            rightchild = nullptr;
+        }
 };
