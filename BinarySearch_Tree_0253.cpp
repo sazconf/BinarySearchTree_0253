@@ -46,9 +46,24 @@ class BinaryTree{
                 //5a : Mark the new node as ROOT
                 ROOT = newNode;
                 //5b : Exit
+                return;
 
             }
 
+            //Step7: If the value in the data field of the new node is greater than that of the parent
+            else if(x> parent -> info){
+                //7a: Make the right child of parent point to the new node
+                parent -> rightchild = newNode;
+                //7b: Exit
+                return;
+            }
+
+
+
+            }
+
+            void search (int element , Node *&parent, Node *&currentNode){
+                //This function searches the current Node of the specific node as well as the current node of its parent
             }
 
 
